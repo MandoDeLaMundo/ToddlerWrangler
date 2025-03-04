@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7106701685894930952}
   - component: {fileID: 1025346776303751556}
   - component: {fileID: 2839948912435850410}
+  - component: {fileID: 6270123329374740180}
+  - component: {fileID: -6422133380887066051}
   m_Layer: 0
   m_Name: blue_baby
   m_TagString: Untagged
@@ -111,3 +113,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f241fbfb543b5640b961676f833dab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6270123329374740180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672363727994982611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 572d9f88f3df6384fb43e7217ec8656c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &-6422133380887066051
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672363727994982611}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.10029459, y: -0.66193867}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.24, y: 10.24}
+    newSize: {x: 10.24, y: 10.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.4660215, y: 8.113773}
+  m_EdgeRadius: 0
