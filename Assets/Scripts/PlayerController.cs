@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     float mZRot = 0.0f;
     float mRotSpeed = 400.0f;
     int mBabiesHeld = 0;
+    public GameObject mSingleIcon;
+    public GameObject mLeftIcon;
+    public GameObject mRightIcon;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +22,8 @@ public class PlayerController : MonoBehaviour
     {
         if (GameManager.instance.mIsGameActive == true)
         MovePlayer();
+        if (Input.GetKeyDown(KeyCode.M))
+            PickupBaby();
     }
 
     void MovePlayer()
@@ -48,10 +53,28 @@ public class PlayerController : MonoBehaviour
     void DropOffBabies()
     {
         Debug.Log("Babies dropped off");
+        mBabiesHeld = 0;
+        mSingleIcon.gameObject.SetActive(false);
+        mLeftIcon.gameObject.SetActive(false);
+        mRightIcon.gameObject.SetActive(false);
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        DropOffBabies();
+        if (other.gameObject.tag == "Pen")
+            DropOffBabies();
+    }
+
+    void PickupBaby()
+    {
+        mBabiesHeld++;
+        if (mBabiesHeld == 1)
+            mSingleIcon.gameObject.SetActive(true);
+        if (mBabiesHeld == 2)
+        { 
+            mSingleIcon.gameObject.SetActive(false);
+            mLeftIcon.gameObject.SetActive(true);
+            mRightIcon.gameObject.SetActive(true);
+        }
     }
 }
