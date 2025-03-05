@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pen
+  - Baby
+  - ScoreBoard
   layers:
   - Default
   - TransparentFX
