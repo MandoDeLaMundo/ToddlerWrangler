@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public bool mIsGameActive;
     public GameObject mPlayer;
-    public TextMeshProUGUI mGameOverText;
+    public string mGameOverText;
+    public string mGameContinue;
     public static GameManager instance;
     // Start is called before the first frame update
 
@@ -33,14 +35,14 @@ public class GameManager : MonoBehaviour
     void StartGame()
     {
         mPlayer.transform.position = Vector3.zero;
-        mPlayer.transform.rotation = Quaternion.Euler(0, 0, 0);
-        mGameOverText.enabled = false;
+        mPlayer.transform.rotation = Quaternion.Euler(0, 0, 0); 
+        SceneManager.LoadScene(mGameContinue);
         mIsGameActive = true;
     }
 
     void GameOver()
     {
-        mGameOverText.enabled = true;
+        SceneManager.LoadScene(mGameOverText);
         mIsGameActive = false;
     }
 }

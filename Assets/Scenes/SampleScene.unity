@@ -284,17 +284,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &353266118 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1169096007674456472, guid: 36d5900b66f8ddb40a214714fd5d278f, type: 3}
-  m_PrefabInstance: {fileID: 4612969015720402184}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,9 +755,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1491646699}
     - target: {fileID: 382055522699523769, guid: 23a4d0861e0fa0f4cbca5c8f3645f51f, type: 3}
+      propertyPath: mGameContinue
+      value: SampleScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 382055522699523769, guid: 23a4d0861e0fa0f4cbca5c8f3645f51f, type: 3}
       propertyPath: mGameOverText
-      value: 
-      objectReference: {fileID: 353266118}
+      value: Game Over
+      objectReference: {fileID: 0}
     - target: {fileID: 4306421058239617643, guid: 23a4d0861e0fa0f4cbca5c8f3645f51f, type: 3}
       propertyPath: m_Name
       value: GameManager
