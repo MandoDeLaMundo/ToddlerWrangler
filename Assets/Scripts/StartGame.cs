@@ -11,4 +11,10 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene(mLevelName);
     }
+
+    public void doExitGame()
+    {
+        Application.Quit();
+        Debug.Log("Game is exiting");
+    }
 }
